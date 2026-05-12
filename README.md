@@ -307,6 +307,12 @@ This visualization allows immediate identification of:
 
 ---
 
+![Pearson Matrix](/standard-pearson-corr-matrix.png)
+
+![Pearson Matrix](/lag-aware-corr-matrix.png)
+
+---
+
 # Main Findings
 
 The project demonstrates several important insights:
