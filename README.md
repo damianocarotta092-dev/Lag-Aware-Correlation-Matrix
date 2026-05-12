@@ -4,9 +4,9 @@
 
 Traditional Pearson correlation matrices only measure the relationship between two variables at the exact same time step:
 
-\[
+$$
 Corr(X_t, Y_t)
-\]
+$$
 
 While working on a standard correlation matrix, I started questioning one important assumption:
 
@@ -51,19 +51,19 @@ The initial results are extremely promising and clearly show that several variab
 
 Standard Pearson correlation measures:
 
-\[
+$$
 Corr(X_t, Y_t)
-\]
+$$
 
 The Lag-Aware approach introduced in this project instead evaluates:
 
-\[
+$$
 \max_k Corr(X_t, Y_{t+k})
-\]
+$$
 
 where:
 
-- \(k\) = temporal lag
+- $k$ = temporal lag
 - positive lag means delayed reaction
 - negative lag means anticipatory behavior
 
@@ -143,9 +143,9 @@ Without detrending:
 
 To solve this issue, first-order differencing was applied:
 
-\[
+$$
 X'_t = X_t - X_{t-1}
-\]
+$$
 
 This transformation converts the series from:
 
@@ -193,9 +193,9 @@ At first glance, these variables appeared unrelated.
 
 The custom lag-aware engine then scanned multiple temporal lags from:
 
-\[
+$$
 -10 \leq lag \leq +10
-\]
+$$
 
 For each variable pair, the engine identified:
 
